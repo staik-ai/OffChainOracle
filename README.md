@@ -17,11 +17,11 @@ Deploy OffChainOracle second:
 
 This requires all of the following:
 
-_MULTIWRAPPER: use address of contract deployed in step 1
-EXISTINGORACLES: use addresses [] of already deployed oracles (or deploy your own oracle based on a DEX (see step 2)
-ORACLETYPES: an array of oracle types [0 = uniswap v2 oracles]
-EXISTINGCONNECTORS: an array of addresses [] of token addresses for primary tokens such as WETH, WXDAI, USDC, WBTC, USDT
-WBASE: the primary wrapped token on the chain (e.g. WETH, WXDAI, WBNB)
+_MULTIWRAPPER: use address of contract deployed in step 1 / 
+EXISTINGORACLES: use addresses [] of already deployed oracles (or deploy your own oracle based on a DEX (see step 2) / 
+ORACLETYPES: an array of oracle types [0 = uniswap v2 oracles] / 
+EXISTINGCONNECTORS: an array of addresses [] of token addresses for primary tokens such as WETH, WXDAI, USDC, WBTC, USDT / 
+WBASE: the primary wrapped token on the chain (e.g. WETH, WXDAI, WBNB) / 
 
 
 
