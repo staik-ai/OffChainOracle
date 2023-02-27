@@ -26,7 +26,7 @@ ORACLETYPES: an array of oracle types [0 = uniswap v2 oracles]
 
 EXISTINGCONNECTORS: an array of addresses [] of token addresses for primary tokens such as WETH, WXDAI, USDC, WBTC, USDT  
 
-WBASE: the primary wrapped token on the chain (e.g. WETH, WXDAI, WBNB) / 
+WBASE: the primary wrapped token on the chain (e.g. WETH, WXDAI, WBNB)  
 
 
 
