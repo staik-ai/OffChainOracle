@@ -1,11 +1,7 @@
-/**
- *Submitted for verification at gnosisscan.io on 2023-02-27
-*/
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.6.0) (token/ERC20/IERC20.sol)
 
-pragma solidity 0.8.17;
+pragma solidity >=0.6.0 <0.8.0;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -86,7 +82,7 @@ interface IERC20 {
 
 
 
-pragma solidity 0.8.17;
+pragma solidity >=0.6.0 <0.8.0;
 interface IOracle {
     function getRate(IERC20 srcToken, IERC20 dstToken, IERC20 connector) external view returns (uint256 rate, uint256 weight);
 }
@@ -96,7 +92,7 @@ interface IOracle {
 
 // OpenZeppelin Contracts (last updated v4.6.0) (utils/math/SafeMath.sol)
 
-pragma solidity 0.8.17;
+pragma solidity >=0.6.0 <0.8.0;
 
 // CAUTION
 // This version of SafeMath should only be used with Solidity 0.8 or later,
@@ -115,7 +111,7 @@ library SafeMath {
      * _Available since v3.4._
      */
     function tryAdd(uint256 a, uint256 b) internal pure returns (bool, uint256) {
-        unchecked {
+         {
             uint256 c = a + b;
             if (c < a) return (false, 0);
             return (true, c);
@@ -128,7 +124,7 @@ library SafeMath {
      * _Available since v3.4._
      */
     function trySub(uint256 a, uint256 b) internal pure returns (bool, uint256) {
-        unchecked {
+         {
             if (b > a) return (false, 0);
             return (true, a - b);
         }
@@ -140,7 +136,7 @@ library SafeMath {
      * _Available since v3.4._
      */
     function tryMul(uint256 a, uint256 b) internal pure returns (bool, uint256) {
-        unchecked {
+         {
             // Gas optimization: this is cheaper than requiring 'a' not being zero, but the
             // benefit is lost if 'b' is also tested.
             // See: https://github.com/OpenZeppelin/openzeppelin-contracts/pull/522
@@ -157,7 +153,7 @@ library SafeMath {
      * _Available since v3.4._
      */
     function tryDiv(uint256 a, uint256 b) internal pure returns (bool, uint256) {
-        unchecked {
+         {
             if (b == 0) return (false, 0);
             return (true, a / b);
         }
@@ -169,7 +165,7 @@ library SafeMath {
      * _Available since v3.4._
      */
     function tryMod(uint256 a, uint256 b) internal pure returns (bool, uint256) {
-        unchecked {
+         {
             if (b == 0) return (false, 0);
             return (true, a % b);
         }
@@ -261,7 +257,7 @@ library SafeMath {
      * - Subtraction cannot overflow.
      */
     function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        unchecked {
+         {
             require(b <= a, errorMessage);
             return a - b;
         }
@@ -280,7 +276,7 @@ library SafeMath {
      * - The divisor cannot be zero.
      */
     function div(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        unchecked {
+         {
             require(b > 0, errorMessage);
             return a / b;
         }
@@ -302,7 +298,7 @@ library SafeMath {
      * - The divisor cannot be zero.
      */
     function mod(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
-        unchecked {
+         {
             require(b > 0, errorMessage);
             return a % b;
         }
@@ -313,7 +309,7 @@ library SafeMath {
 // File contracts/Sqrt.sol
 
 
-pragma solidity 0.8.17;
+pragma solidity >=0.6.0 <0.8.0;
 
 
 library Sqrt {
@@ -335,7 +331,7 @@ library Sqrt {
 // File contracts/OracleBase.sol
 
 
-pragma solidity 0.8.17;
+pragma solidity >=0.6.0 <0.8.0;
 abstract contract OracleBase is IOracle {
     using SafeMath for uint256;
     using Sqrt for uint256;
@@ -370,7 +366,7 @@ abstract contract OracleBase is IOracle {
 // File contracts/IUniswapV2Pair.sol
 
 
-pragma solidity 0.8.17;
+pragma solidity >=0.6.0 <0.8.0;
 
 
 interface IUniswapV2Pair {
@@ -381,7 +377,7 @@ interface IUniswapV2Pair {
 // File contracts/SushiSwapV2Oracle.sol
 
 
-pragma solidity 0.8.17;
+pragma solidity >=0.6.0 <0.8.0;
 contract SushiSwapV2Oracle is OracleBase {
     address public immutable factory;
     bytes32 public immutable initcodeHash;
