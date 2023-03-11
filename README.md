@@ -29,7 +29,7 @@ EXISTINGCONNECTORS: an array of addresses [] of token addresses for primary toke
 WBASE: the primary wrapped token on the chain (e.g. WETH, WXDAI, WBNB)  
 
 
-# Deployed contracts (Arbiscan)
+# Deployed contracts (Arbitrum)
 Multiwrapper - https://arbiscan.io/address/0xe7c979982112175a81ced1f21004815c988c2300  
 StaikSushiswapV2Oracle - https://arbiscan.io/address/0xb4008a9162a5427d6b142928b4e78ad09753c006  
 StaikUniswapV3Oracle - https://arbiscan.io/address/0x84ac745e50e3b4440dc7479ad55044ae7d3d32ac  
