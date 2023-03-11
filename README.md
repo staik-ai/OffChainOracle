@@ -9,7 +9,7 @@ This requires an array ["address"] of existing Wrappers on deployment
 For example 'WETH' contract on Ethereum or 'WXDAI' contract on Gnosis
 
 # step 2 (optional)
-Create your own Oracle Contract (see the SushiSwapV2Oracle.sol contract) if you don't have one already to use.  
+Create your own Oracle Contract (see the StaikSushiSwapV2Oracle.sol & StaikUniswapV3Oracle.sol contracts) if you don't have any already to use.  
 
 To deploy the file, you'll need the FACTORY smart contract address of the DEX on which you are making the oracle (e.g. UniswapV2Factory) as well as the 'pairCodeHash' which can be obtained from the READ of the factory contract. This is used as the _INITCODEHASH value when deploying.
 
